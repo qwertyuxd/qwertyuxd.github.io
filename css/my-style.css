@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Offside|Sonsie+One');
+
+body {
+    font-family: offside, sans-serif;
+    background-color: #fff7e9;
+}
+
+.my-pad-top {
+    padding-top: 20px;
+}
+
+.my-pad-top-lg {
+    padding-top: 80px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-color: #c37418;
+    background: transparent;
+}
+
+.navbar {
+    letter-spacing: 2px;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #CC0000;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color: #CC0000 !important;
+/*    background-color: #ffffff !important;*/
+    outline: 1px solid #CC0000; 
+}
+
+.navbar-default .navbar-toggle,
+.navbar button {
+    background-color: #CC0000;
+}
+
+/* .navbar-brand:hover required this specificity - at least when previewing */
+.navbar-header .navbar-brand:hover {
+    color: #CC0000;
+}
+
+
+.jumbotron {
+    background: url(../assets/img/carshare-lg-transparency.png) no-repeat;
+    background-size: cover;
+    /*    following centres the  image on the car*/
+    background-position: 95% 94%;
+    min-height: 548px;
+    margin: 0;
+}
+
+.jumbotron h1 {
+    font-family: "sonsie one", sans-serif;
+    color: #CC0000;
+    text-align: center;
+}
+
+
+/* following .btn-transparent adapted from https://gist.github.com/nurbek-ab/92989fe6c5071e956b6a */
+
+.btn-transparent {
+    background: transparent;
+    color: #505050;
+    /* the following cause validation warnings, but I believe it's to be expected when using these 'vendor extensions'?  */
+    -webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -o-transition: background .2s ease-in-out, border .2s ease-in-out;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+    border: 2px solid #989797;
+}
+
+.btn-transparent:hover {
+    color: #b1adad;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#main-feature,
+#about,
+#founders {
+    padding: 40px 0;
+}
+
+.nav-pills li a {
+    border: 4px solid #CCCCCC;
+    font-family: "sonsie one", sans-serif;
+    font-size: 2.4em;
+    border-radius: 15px;
+}
+
+.nav-pills li a,
+.nav-pills li a:focus {
+    color: rgb(149, 133, 121);
+    background-color: transparent;
+}
+
+.nav-pills li.active a,
+.nav-pills li.active a:focus {
+    color: #ffffff;
+    background-color: #c4632e;
+}
+
+.nav-pills li a:hover {
+    background-color: rgba(186, 95, 28, 0.29);
+    color: #7c5749;
+}
+
+.nav-pills li.active a:hover {
+    background-color: #d88652;
+    color: white;
+}
+
+.tab-pane h2 {
+    padding: 4px 0 2px 16px;
+}
+
+.slight-delay {
+    animation-delay: 500ms;
+}
+
+#about {
+    /*    Colour check */
+    background: #ffe7ad;
+}
+
+.vid-how {
+    display: block;
+    /* required to be able to centre video element w/o additional div wrapping */
+    margin: auto;
+    max-width: 100%;
+    /* scale down video with narrowing viewport */
+}
+
+
+footer {
+    min-height: 1200px; /* aids with user experience for single page navigation */
+    background: #d6d6d6;
+    color: #000000;
+    padding: 50px 0 90px 0;
+    /*    bottom padding prevents social media icons being obscured by "top" button */
+}
+
+
+/* align text with social icons */
+
+.copy-box {
+    min-height: 56px;
+    padding-top: 26px;
+    font-size: 1.4em;
+}
+
+.contact-links{
+   width: initial;
+}
+
+.contact-links a {
+    color: #fff;
+}
+
+
+/* social media links */
+
+.contact-links a:link,
+.contact-links a:visited {
+    color: #434343;
+}
+
+/* mouse over link */
+
+.contact-links a:hover {
+    color: #CC0000;
+}
+
+/* selected link */
+
+.contact-links a:active {
+    color: #ff7575;
+}
+
+
+/* return to top button - see my-custom.js file for accreditation */
+
+#btn-to-top {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    background-color: #609689;   
+    color: white;
+    /* Text color */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 12px;
+    /* Rounded corners */
+    font-size: 20px;
+    /* Increase font size */
+}
+
+#btn-to-top:hover {
+    background: #3d8171;
+}
+
+/*bootstrap override */
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-bottom: 15px;
+}
+
+/*- adds gradient and color to button*/
+.btn-primary {
+ 
+    background-image: -webkit-linear-gradient(top,#f0ad4e 0,#eb9316 100%);
+    background-image: -o-linear-gradient(top,#f0ad4e 0,#eb9316 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f0ad4e),to(#eb9316));
+    background-image: linear-gradient(to bottom,#f0ad4e 0,#eb9316 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffeb9316', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-color: #e38d13;
+
+
+}
+
+.btn-primary.focus,.btn-primary:focus {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #985f0d
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512
+}
+
+.btn-primary.active,.btn-primary:active,.open>.dropdown-toggle.btn-primary {
+   color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512
+}
+
+.btn-primary.active.focus,.btn-primary.active:focus,.btn-primary.active:hover,.btn-primary:active.focus,.btn-primary:active:focus,.btn-primary:active:hover,.open>.dropdown-toggle.btn-primary.focus,.open>.dropdown-toggle.btn-primary:focus,.open>.dropdown-toggle.btn-primary:hover {
+  color: #fff;
+    background-color: #d58512;
+    border-color: #985f0d
+}
+
+.btn-primary.active,.btn-primary:active,.open>.dropdown-toggle.btn-primary {
+    background-image: none
+}
+
+.btn-primary.disabled.focus,.btn-primary.disabled:focus,.btn-primary.disabled:hover,.btn-primary[disabled].focus,.btn-primary[disabled]:focus,.btn-primary[disabled]:hover,fieldset[disabled] .btn-primary.focus,fieldset[disabled] .btn-primary:focus,fieldset[disabled] .btn-primary:hover {
+    background-color: #f0ad4e;
+    border-color: #eea236
+}
+
+.btn-primary .badge {
+    color: #f0ad4e;
+    background-color: #fff
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+
+    #about p {
+        padding: 0px 6%;
+
+    }
+
+}

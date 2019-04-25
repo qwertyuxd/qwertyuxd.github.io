@@ -1,0 +1,43 @@
+
+body {
+    background: #f5fffa;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    
+    width: 60%;
+    margin: 0 auto;
+    
+} 
+
+h1 {
+    color: #192c22;
+}
+
+.circle {
+    
+    height: 100px;
+    width: 100px;
+    background: #60d094;
+    border-radius: 100px;
+   
+   
+}
+
+.square {
+    margin-top: 30px;
+    height: 100px;
+    width: 100px;
+    background: #25b4ff;
+    border-radius: 9px;
+
+
+}
+
+.offset {
+    transform: translateX(10000px);
+    
+}
+
+
